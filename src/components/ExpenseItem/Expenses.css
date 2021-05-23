@@ -1,0 +1,14 @@
+.exp-div-main {
+    background-color:rgba(128, 128, 128, 0.212);
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 14px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .exp-div-main {
+        width: 95%;
+        padding: 2%;
+    }
+}

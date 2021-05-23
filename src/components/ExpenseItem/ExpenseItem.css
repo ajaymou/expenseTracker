@@ -1,0 +1,78 @@
+.expense-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  padding: 10px 10px;
+  margin: 1rem auto;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+}
+
+.expense-item__description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+  margin-left: 20px;
+}
+
+.expense-item h2 {
+  color: white;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: white;
+}
+
+.expense-item__price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 12px;
+  z-index: 10;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+@media (min-width: 580px) {
+  .expense-item__description {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .expense-item__description h2 {
+    font-size: 1.25rem;
+  }
+  
+
+  .expense-item__price {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+
+}
+
+@media (max-width: 768px) {
+  .expense-item__description h1 {
+    font-size: 16px;
+    margin-top: -50px;
+  }
+  .expense-item__price {
+    margin-top: -20px;
+  }
+}
+
